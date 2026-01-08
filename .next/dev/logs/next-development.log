@@ -1,3 +1,8 @@
-[00:00:02.338] Server  LOG     ✓ Ready in 1984ms
-[00:00:05.205] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:05.388] Browser WARN    Image with src "/_next/static/media/logo.1dfa99ea.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:02.784] Server  LOG     ✓ Ready in 2.6s
+[00:00:06.198] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:06.380] Browser WARN    Image with src "/_next/static/media/logo.1dfa99ea.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:40.824] Browser LOG     15
+[00:00:40.824] Browser LOG     "2026-01-15T16:00:00.000Z"
+[00:00:40.824] Browser LOG     16:00
+[00:00:40.824] Browser LOG     4
+[00:00:40.824] Browser LOG     Form Values: {"firstName":"Enkhzorig","lastName":"Ganotgon","phone":"99946042","register":""}
