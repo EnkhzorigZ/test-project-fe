@@ -1,0 +1,29 @@
+{
+  "app": {
+    "[project]/app/page": [
+      "static/media/GIP_Thin-s.p.2c2f5830.otf",
+      "static/media/GIP_ThinItalic-s.p.374d79cf.otf",
+      "static/media/GIP_UltraLight-s.p.33a6e9c1.otf",
+      "static/media/GIP_UltraLightItalic-s.p.e370821a.otf",
+      "static/media/GIP_Light-s.p.8bb21b7d.otf",
+      "static/media/GIP_LightItalic-s.p.88cdaad9.otf",
+      "static/media/GIP_Regular-s.p.ee97b2b2.otf",
+      "static/media/GIP_RegularItalic-s.p.da788b61.otf",
+      "static/media/GIP_Medium-s.p.f033e8e3.otf",
+      "static/media/GIP_MediumItalic-s.p.77cffdce.otf",
+      "static/media/GIP_SemiBold-s.p.4b475a98.otf",
+      "static/media/GIP_SemiBoldItalic-s.p.bf2ca886.otf",
+      "static/media/GIP_Bold-s.p.65ff8cc5.otf",
+      "static/media/GIP_BoldItalic-s.p.6be48c2f.otf",
+      "static/media/GIP_ExtraBold-s.p.8c96ea39.otf",
+      "static/media/GIP_ExtraBoldItalic-s.p.4bdcb799.otf",
+      "static/media/GIP_Black-s.p.673c81fb.otf",
+      "static/media/GIP_BlackItalic-s.p.ea4ec486.otf",
+      "static/media/GIP_Heavy-s.p.d89bc12c.otf",
+      "static/media/GIP_HeavyItalic-s.p.14d3f994.otf"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}
