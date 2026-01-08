@@ -6,3 +6,5 @@
 [00:00:40.824] Browser LOG     16:00
 [00:00:40.824] Browser LOG     4
 [00:00:40.824] Browser LOG     Form Values: {"firstName":"Enkhzorig","lastName":"Ganotgon","phone":"99946042","register":""}
+[00:09:33.295] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:33.479] Browser WARN    Image with src "/_next/static/media/logo.1dfa99ea.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
