@@ -355,7 +355,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$nuqs$2f$dist
 ;
 ;
 ;
-function CategoryCard({ item: { id, name }, index, setFormSubmitted }) {
+function CategoryCard({ item: { id, name }, index, setFormSubmitted, setStep }) {
     const [selectedCategory, setSelectedCategory] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$nuqs$2f$dist$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["useQueryState"])("category", __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$nuqs$2f$dist$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["parseAsInteger"]);
     const [categoryName, setCategoryName] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$nuqs$2f$dist$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["useQueryState"])("name", {
         defaultValue: ""
@@ -366,6 +366,7 @@ function CategoryCard({ item: { id, name }, index, setFormSubmitted }) {
             setSelectedCategory(id);
             setFormSubmitted(false);
             setCategoryName(name);
+            setStep(1);
         },
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "flex items-center gap-2",
@@ -374,19 +375,19 @@ function CategoryCard({ item: { id, name }, index, setFormSubmitted }) {
                     size: 16
                 }, void 0, false, {
                     fileName: "[project]/components/CategoryCard.tsx",
-                    lineNumber: 37,
+                    lineNumber: 40,
                     columnNumber: 9
                 }, this),
                 name
             ]
         }, void 0, true, {
             fileName: "[project]/components/CategoryCard.tsx",
-            lineNumber: 36,
+            lineNumber: 39,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/CategoryCard.tsx",
-        lineNumber: 24,
+        lineNumber: 26,
         columnNumber: 5
     }, this);
 }
@@ -1131,7 +1132,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$popover$
 ;
 ;
 ;
-function CategoryCombobox({ category, setCategory, dummyJson }) {
+function CategoryCombobox({ category, setCategory, dummyJson, setStep }) {
     const [open, setOpen] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"](false);
     const selectedCategory = dummyJson.find((item)=>item.id === category);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$popover$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Popover"], {
@@ -1151,18 +1152,18 @@ function CategoryCombobox({ category, setCategory, dummyJson }) {
                             className: "ml-2 h-4 w-4 opacity-50"
                         }, void 0, false, {
                             fileName: "[project]/components/CategoryCombobox.tsx",
-                            lineNumber: 50,
+                            lineNumber: 52,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/CategoryCombobox.tsx",
-                    lineNumber: 43,
+                    lineNumber: 45,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/CategoryCombobox.tsx",
-                lineNumber: 42,
+                lineNumber: 44,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$popover$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["PopoverContent"], {
@@ -1175,7 +1176,7 @@ function CategoryCombobox({ category, setCategory, dummyJson }) {
                             className: ""
                         }, void 0, false, {
                             fileName: "[project]/components/CategoryCombobox.tsx",
-                            lineNumber: 56,
+                            lineNumber: 58,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$command$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CommandList"], {
@@ -1184,7 +1185,7 @@ function CategoryCombobox({ category, setCategory, dummyJson }) {
                                     children: "Олдсонгүй"
                                 }, void 0, false, {
                                     fileName: "[project]/components/CategoryCombobox.tsx",
-                                    lineNumber: 58,
+                                    lineNumber: 60,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$command$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CommandGroup"], {
@@ -1195,6 +1196,7 @@ function CategoryCombobox({ category, setCategory, dummyJson }) {
                                             onSelect: ()=>{
                                                 setCategory(item.id);
                                                 setOpen(false);
+                                                setStep(1);
                                             },
                                             children: [
                                                 item.name,
@@ -1202,41 +1204,41 @@ function CategoryCombobox({ category, setCategory, dummyJson }) {
                                                     className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("ml-auto h-4 w-4", category === item.id ? "opacity-100" : "opacity-0")
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/CategoryCombobox.tsx",
-                                                    lineNumber: 71,
+                                                    lineNumber: 74,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, item.id, true, {
                                             fileName: "[project]/components/CategoryCombobox.tsx",
-                                            lineNumber: 61,
+                                            lineNumber: 63,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/components/CategoryCombobox.tsx",
-                                    lineNumber: 59,
+                                    lineNumber: 61,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/CategoryCombobox.tsx",
-                            lineNumber: 57,
+                            lineNumber: 59,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/CategoryCombobox.tsx",
-                    lineNumber: 55,
+                    lineNumber: 57,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/CategoryCombobox.tsx",
-                lineNumber: 54,
+                lineNumber: 56,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/CategoryCombobox.tsx",
-        lineNumber: 41,
+        lineNumber: 43,
         columnNumber: 5
     }, this);
 }
@@ -1260,7 +1262,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$CategoryCombob
 ;
 ;
 ;
-function CategoryPicker({ setFormSubmitted }) {
+function CategoryPicker({ setFormSubmitted, setStep }) {
     const [category, setCategory] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$nuqs$2f$dist$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["useQueryState"])("category", __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$nuqs$2f$dist$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["parseAsInteger"]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -1271,7 +1273,7 @@ function CategoryPicker({ setFormSubmitted }) {
                     children: "Төрлүүд"
                 }, void 0, false, {
                     fileName: "[project]/components/CategoryPicker.tsx",
-                    lineNumber: 17,
+                    lineNumber: 19,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1283,45 +1285,47 @@ function CategoryPicker({ setFormSubmitted }) {
                             children: __TURBOPACK__imported__module__$5b$project$5d2f$dummy$2f$dummmy$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dummyJson"]?.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$CategoryCard$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                     item: item,
                                     index: index,
-                                    setFormSubmitted: setFormSubmitted
+                                    setFormSubmitted: setFormSubmitted,
+                                    setStep: setStep
                                 }, item.id, false, {
                                     fileName: "[project]/components/CategoryPicker.tsx",
-                                    lineNumber: 26,
+                                    lineNumber: 28,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/components/CategoryPicker.tsx",
-                            lineNumber: 24,
+                            lineNumber: 26,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/CategoryPicker.tsx",
-                        lineNumber: 23,
+                        lineNumber: 25,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/CategoryPicker.tsx",
-                    lineNumber: 22,
+                    lineNumber: 24,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$CategoryCombobox$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CategoryCombobox"], {
                     category: category,
                     setCategory: setCategory,
-                    dummyJson: __TURBOPACK__imported__module__$5b$project$5d2f$dummy$2f$dummmy$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dummyJson"]
+                    dummyJson: __TURBOPACK__imported__module__$5b$project$5d2f$dummy$2f$dummmy$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dummyJson"],
+                    setStep: setStep
                 }, void 0, false, {
                     fileName: "[project]/components/CategoryPicker.tsx",
-                    lineNumber: 39,
+                    lineNumber: 42,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/CategoryPicker.tsx",
-            lineNumber: 16,
+            lineNumber: 18,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/CategoryPicker.tsx",
-        lineNumber: 15,
+        lineNumber: 17,
         columnNumber: 5
     }, this);
 }
@@ -2107,6 +2111,7 @@ function ConfirmSection({ registeredForm }) {
     const [currentStep, setCurrentStep] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(1);
     const StepComponent = stepComponents[currentStep - 1];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
+        className: "dark:border dark:border-customred border border-customred",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
             className: "space-y-6",
             children: [
@@ -2289,7 +2294,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$logo$2e$png$2e$mjs
 ;
 ;
 ;
-function DoctorCard({ doctor, setFormSubmitted }) {
+function DoctorCard({ doctor, setFormSubmitted, setStep }) {
     const [selectedDoctor, setSelectedDoctor] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$nuqs$2f$dist$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["useQueryState"])("doctor", {
         defaultValue: ""
     });
@@ -2297,6 +2302,7 @@ function DoctorCard({ doctor, setFormSubmitted }) {
     const handleChange = ()=>{
         setSelectedDoctor(doctor.id.toString());
         setFormSubmitted(false);
+        setStep(4);
     };
     const checkboxId = `doctor-checkbox-${doctor.id}`;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2314,12 +2320,12 @@ function DoctorCard({ doctor, setFormSubmitted }) {
                         className: "object-cover"
                     }, void 0, false, {
                         fileName: "[project]/components/DoctorCard.tsx",
-                        lineNumber: 40,
+                        lineNumber: 43,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/DoctorCard.tsx",
-                    lineNumber: 39,
+                    lineNumber: 42,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2329,7 +2335,7 @@ function DoctorCard({ doctor, setFormSubmitted }) {
                             children: doctor.doctor_name
                         }, void 0, false, {
                             fileName: "[project]/components/DoctorCard.tsx",
-                            lineNumber: 48,
+                            lineNumber: 51,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2337,13 +2343,13 @@ function DoctorCard({ doctor, setFormSubmitted }) {
                             children: "Specialization info here"
                         }, void 0, false, {
                             fileName: "[project]/components/DoctorCard.tsx",
-                            lineNumber: 49,
+                            lineNumber: 52,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/DoctorCard.tsx",
-                    lineNumber: 47,
+                    lineNumber: 50,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -2354,18 +2360,18 @@ function DoctorCard({ doctor, setFormSubmitted }) {
                     className: "w-5 h-5 accent-primary shrink-0"
                 }, void 0, false, {
                     fileName: "[project]/components/DoctorCard.tsx",
-                    lineNumber: 51,
+                    lineNumber: 54,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/DoctorCard.tsx",
-            lineNumber: 35,
+            lineNumber: 38,
             columnNumber: 7
         }, this)
     }, doctor.id, false, {
         fileName: "[project]/components/DoctorCard.tsx",
-        lineNumber: 31,
+        lineNumber: 34,
         columnNumber: 5
     }, this);
 }
@@ -2385,7 +2391,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$DoctorCard$2e$
 ;
 ;
 ;
-function DoctorPicker({ setFormSubmitted }) {
+function DoctorPicker({ setFormSubmitted, setStep }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
             className: "grid gap-3",
@@ -2395,33 +2401,34 @@ function DoctorPicker({ setFormSubmitted }) {
                     children: "Эмчүүд"
                 }, void 0, false, {
                     fileName: "[project]/components/DoctorPicker.tsx",
-                    lineNumber: 13,
+                    lineNumber: 15,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "flex flex-wrap gap-4 items-center justify-start",
                     children: __TURBOPACK__imported__module__$5b$project$5d2f$dummy$2f$dummmy$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["doctorList"]?.map((doctor)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$DoctorCard$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                             doctor: doctor,
-                            setFormSubmitted: setFormSubmitted
+                            setFormSubmitted: setFormSubmitted,
+                            setStep: setStep
                         }, doctor.id, false, {
                             fileName: "[project]/components/DoctorPicker.tsx",
-                            lineNumber: 18,
+                            lineNumber: 20,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/DoctorPicker.tsx",
-                    lineNumber: 16,
+                    lineNumber: 18,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/DoctorPicker.tsx",
-            lineNumber: 12,
+            lineNumber: 14,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/DoctorPicker.tsx",
-        lineNumber: 11,
+        lineNumber: 13,
         columnNumber: 5
     }, this);
 }
@@ -3021,7 +3028,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$nuqs$2f$dist
 ;
 ;
 ;
-function RowDatePicker({ setFormSubmitted }) {
+function RowDatePicker({ setFormSubmitted, setStep }) {
     const today = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$date$2d$fns$2f$startOfDay$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["startOfDay"])(new Date());
     // only month is needed
     const [selectedDate, setSelectedDate] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$nuqs$2f$dist$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["useQueryState"])("date", {
@@ -3043,7 +3050,7 @@ function RowDatePicker({ setFormSubmitted }) {
                     children: "Үзлэгийн өдөр сонгох"
                 }, void 0, false, {
                     fileName: "[project]/components/RowDatePicker.tsx",
-                    lineNumber: 35,
+                    lineNumber: 37,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3057,6 +3064,7 @@ function RowDatePicker({ setFormSubmitted }) {
                             onClick: ()=>{
                                 setFormSubmitted(false);
                                 setSelectedDate(date);
+                                setStep(2);
                             },
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3068,7 +3076,7 @@ function RowDatePicker({ setFormSubmitted }) {
                                     })?.slice(1)
                                 }, void 0, false, {
                                     fileName: "[project]/components/RowDatePicker.tsx",
-                                    lineNumber: 61,
+                                    lineNumber: 64,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3076,7 +3084,7 @@ function RowDatePicker({ setFormSubmitted }) {
                                     children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$date$2d$fns$2f$format$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["format"])(date, "dd")
                                 }, void 0, false, {
                                     fileName: "[project]/components/RowDatePicker.tsx",
-                                    lineNumber: 74,
+                                    lineNumber: 77,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3084,30 +3092,30 @@ function RowDatePicker({ setFormSubmitted }) {
                                     children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$date$2d$fns$2f$format$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["format"])(date, "yyyy.MM.dd")
                                 }, void 0, false, {
                                     fileName: "[project]/components/RowDatePicker.tsx",
-                                    lineNumber: 84,
+                                    lineNumber: 87,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, date.toISOString(), true, {
                             fileName: "[project]/components/RowDatePicker.tsx",
-                            lineNumber: 48,
+                            lineNumber: 50,
                             columnNumber: 15
                         }, this);
                     })
                 }, void 0, false, {
                     fileName: "[project]/components/RowDatePicker.tsx",
-                    lineNumber: 40,
+                    lineNumber: 42,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/RowDatePicker.tsx",
-            lineNumber: 34,
+            lineNumber: 36,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/RowDatePicker.tsx",
-        lineNumber: 33,
+        lineNumber: 35,
         columnNumber: 5
     }, this);
 }
@@ -3129,7 +3137,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$nuqs$2f$dist
 ;
 ;
 ;
-function TimePicker({ setFormSubmitted }) {
+function TimePicker({ setFormSubmitted, setStep }) {
     const [selectedTime, setSelectedTime] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$nuqs$2f$dist$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["useQueryState"])("time", {
         parse: (value)=>value || null,
         serialize: (value)=>value || "",
@@ -3144,7 +3152,7 @@ function TimePicker({ setFormSubmitted }) {
                     children: "Цаг сонгох"
                 }, void 0, false, {
                     fileName: "[project]/components/TimePicker.tsx",
-                    lineNumber: 20,
+                    lineNumber: 22,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3156,32 +3164,33 @@ function TimePicker({ setFormSubmitted }) {
                                 onClick: ()=>{
                                     setFormSubmitted(false);
                                     setSelectedTime(item.time);
+                                    setStep(3);
                                 },
                                 children: item.time
                             }, void 0, false, {
                                 fileName: "[project]/components/TimePicker.tsx",
-                                lineNumber: 26,
+                                lineNumber: 28,
                                 columnNumber: 15
                             }, this)
                         }, item.id, false, {
                             fileName: "[project]/components/TimePicker.tsx",
-                            lineNumber: 25,
+                            lineNumber: 27,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/TimePicker.tsx",
-                    lineNumber: 23,
+                    lineNumber: 25,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/TimePicker.tsx",
-            lineNumber: 19,
+            lineNumber: 21,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/TimePicker.tsx",
-        lineNumber: 18,
+        lineNumber: 20,
         columnNumber: 5
     }, this);
 }
@@ -3203,7 +3212,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$nuqs$2f$dist
 ;
 ;
 ;
-function WarningText({ setFormSubmitted }) {
+function WarningText({ setFormSubmitted, setStep }) {
     const [category, setCategory] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$nuqs$2f$dist$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["useQueryState"])("category", __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$nuqs$2f$dist$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["parseAsInteger"]);
     const [getDate, setGetDate] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$nuqs$2f$dist$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["useQueryState"])("date", {
         defaultValue: ""
@@ -3222,6 +3231,7 @@ function WarningText({ setFormSubmitted }) {
         setDoctor(null);
         setName("");
         setFormSubmitted(false);
+        setStep(0);
     };
     const isAnyInfoAvailable = category !== null && category !== undefined || getDate && getDate !== "" || time && time !== "" || doctor !== null && doctor !== undefined || name && name !== "";
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3235,12 +3245,12 @@ function WarningText({ setFormSubmitted }) {
                             size: 24
                         }, void 0, false, {
                             fileName: "[project]/components/WarningText.tsx",
-                            lineNumber: 38,
+                            lineNumber: 41,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/WarningText.tsx",
-                        lineNumber: 37,
+                        lineNumber: 40,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3251,45 +3261,52 @@ function WarningText({ setFormSubmitted }) {
                                 children: " 77551010 "
                             }, void 0, false, {
                                 fileName: "[project]/components/WarningText.tsx",
-                                lineNumber: 42,
+                                lineNumber: 45,
                                 columnNumber: 11
                             }, this),
                             " дугаарт холбогдож өөрийн захиалсан цагаа цуцлуулах боломжтой."
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/WarningText.tsx",
-                        lineNumber: 40,
+                        lineNumber: 43,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/WarningText.tsx",
-                lineNumber: 36,
+                lineNumber: 39,
                 columnNumber: 7
             }, this),
-            isAnyInfoAvailable && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
-                variant: "destructive",
-                className: "px-10 py-5",
-                onClick: async ()=>{
-                    await handleClearInfo();
-                },
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {}, void 0, false, {
-                        fileName: "[project]/components/WarningText.tsx",
-                        lineNumber: 55,
-                        columnNumber: 11
-                    }, this),
-                    "Мэдээлэл арилгах"
-                ]
-            }, void 0, true, {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "hidden md:block",
+                children: isAnyInfoAvailable && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
+                    variant: "destructive",
+                    className: "px-10 py-5",
+                    onClick: async ()=>{
+                        await handleClearInfo();
+                    },
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {}, void 0, false, {
+                            fileName: "[project]/components/WarningText.tsx",
+                            lineNumber: 59,
+                            columnNumber: 13
+                        }, this),
+                        "Мэдээлэл арилгах"
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/components/WarningText.tsx",
+                    lineNumber: 52,
+                    columnNumber: 11
+                }, this)
+            }, void 0, false, {
                 fileName: "[project]/components/WarningText.tsx",
-                lineNumber: 48,
-                columnNumber: 9
+                lineNumber: 50,
+                columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/WarningText.tsx",
-        lineNumber: 35,
+        lineNumber: 38,
         columnNumber: 5
     }, this);
 }

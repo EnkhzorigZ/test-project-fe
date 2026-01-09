@@ -436,6 +436,10 @@
     position: relative;
   }
 
+  .static {
+    position: static;
+  }
+
   .inset-0 {
     inset: calc(var(--spacing) * 0);
   }
@@ -1619,6 +1623,10 @@
     .border-border\/50 {
       border-color: color-mix(in oklab, var(--border) 50%, transparent);
     }
+  }
+
+  .border-customred {
+    border-color: var(--color-customred);
   }
 
   .border-inactivecolor {
@@ -5125,8 +5133,17 @@
     rotate: none;
   }
 
+  .dark\:border:is(.dark *) {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+
   .dark\:border-background:is(.dark *) {
     border-color: var(--background);
+  }
+
+  .dark\:border-customred:is(.dark *) {
+    border-color: var(--color-customred);
   }
 
   .dark\:border-input:is(.dark *) {
