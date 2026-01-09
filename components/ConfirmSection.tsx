@@ -86,7 +86,7 @@ export default function ConfirmSection({
   const StepComponent = stepComponents[currentStep - 1];
 
   return (
-    <Card>
+    <Card className="dark:border dark:border-customred border border-customred">
       <CardContent className="space-y-6">
         <div className="w-full flex items-center justify-between">
           <Button

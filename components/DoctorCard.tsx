@@ -6,6 +6,7 @@ import logo from "@/public/logo.png";
 export default function DoctorCard({
   doctor,
   setFormSubmitted,
+  setStep,
 }: {
   doctor: {
     id: number;
@@ -13,6 +14,7 @@ export default function DoctorCard({
     image: string;
   };
   setFormSubmitted: (value: boolean) => void;
+  setStep: (value: number) => void;
 }) {
   const [selectedDoctor, setSelectedDoctor] = useQueryState("doctor", {
     defaultValue: "",
@@ -23,6 +25,7 @@ export default function DoctorCard({
   const handleChange = () => {
     setSelectedDoctor(doctor.id.toString());
     setFormSubmitted(false);
+    setStep(4);
   };
 
   const checkboxId = `doctor-checkbox-${doctor.id}`;

@@ -6,8 +6,10 @@ import { CategoryCombobox } from "./CategoryCombobox";
 
 export default function CategoryPicker({
   setFormSubmitted,
+  setStep,
 }: {
   setFormSubmitted: (value: boolean) => void;
+  setStep: (value: number) => void;
 }) {
   const [category, setCategory] = useQueryState("category", parseAsInteger);
 
@@ -28,6 +30,7 @@ export default function CategoryPicker({
                   item={item}
                   index={index}
                   setFormSubmitted={setFormSubmitted}
+                  setStep={setStep}
                 />
               ))}
             </div>
@@ -40,6 +43,7 @@ export default function CategoryPicker({
           category={category}
           setCategory={setCategory}
           dummyJson={dummyJson}
+          setStep={setStep}
         />
       </CardContent>
     </Card>

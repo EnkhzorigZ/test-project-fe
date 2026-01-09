@@ -5,8 +5,10 @@ import { useQueryState } from "nuqs";
 
 export default function TimePicker({
   setFormSubmitted,
+  setStep,
 }: {
   setFormSubmitted: (value: boolean) => void;
+  setStep: (value: number) => void;
 }) {
   const [selectedTime, setSelectedTime] = useQueryState("time", {
     parse: (value) => value || null,
@@ -29,6 +31,7 @@ export default function TimePicker({
                 onClick={() => {
                   setFormSubmitted(false);
                   setSelectedTime(item.time);
+                  setStep(3);
                 }}
               >
                 {item.time}

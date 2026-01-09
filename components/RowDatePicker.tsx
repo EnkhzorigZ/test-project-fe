@@ -10,8 +10,10 @@ import { useQueryState } from "nuqs";
 
 export default function RowDatePicker({
   setFormSubmitted,
+  setStep,
 }: {
   setFormSubmitted: (value: boolean) => void;
+  setStep: (value: number) => void;
 }) {
   const today = startOfDay(new Date());
 
@@ -55,6 +57,7 @@ export default function RowDatePicker({
                 onClick={() => {
                   setFormSubmitted(false);
                   setSelectedDate(date);
+                  setStep(2);
                 }}
               >
                 {/* TOP */}

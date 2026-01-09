@@ -6,10 +6,12 @@ export default function CategoryCard({
   item: { id, name },
   index,
   setFormSubmitted,
+  setStep,
 }: {
   item: { id: number; name: string };
   index: number;
   setFormSubmitted: (value: boolean) => void;
+  setStep: (value: number) => void;
 }) {
   const [selectedCategory, setSelectedCategory] = useQueryState(
     "category",
@@ -31,6 +33,7 @@ export default function CategoryCard({
         setSelectedCategory(id);
         setFormSubmitted(false);
         setCategoryName(name);
+        setStep(1);
       }}
     >
       <div className="flex items-center gap-2">

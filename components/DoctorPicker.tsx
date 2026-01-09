@@ -4,8 +4,10 @@ import DoctorCard from "./DoctorCard";
 
 export default function DoctorPicker({
   setFormSubmitted,
+  setStep,
 }: {
   setFormSubmitted: (value: boolean) => void;
+  setStep: (value: number) => void;
 }) {
   return (
     <Card>
@@ -19,6 +21,7 @@ export default function DoctorPicker({
               doctor={doctor}
               key={doctor.id}
               setFormSubmitted={setFormSubmitted}
+              setStep={setStep}
             />
           ))}
         </div>

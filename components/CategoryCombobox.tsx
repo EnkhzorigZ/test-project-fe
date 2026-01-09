@@ -28,10 +28,12 @@ export function CategoryCombobox({
   category,
   setCategory,
   dummyJson,
+  setStep,
 }: {
   category: number | null;
   setCategory: (value: number) => void;
   dummyJson: Category[];
+  setStep: (value: number) => void;
 }) {
   const [open, setOpen] = React.useState(false);
 
@@ -65,6 +67,7 @@ export function CategoryCombobox({
                   onSelect={() => {
                     setCategory(item.id);
                     setOpen(false);
+                    setStep(1);
                   }}
                 >
                   {item.name}

@@ -6,8 +6,10 @@ import { parseAsInteger, useQueryState } from "nuqs";
 
 export default function WarningText({
   setFormSubmitted,
+  setStep,
 }: {
   setFormSubmitted: (value: boolean) => void;
+  setStep: (value: number) => void;
 }) {
   const [category, setCategory] = useQueryState("category", parseAsInteger);
   const [getDate, setGetDate] = useQueryState("date", { defaultValue: "" });
@@ -22,6 +24,7 @@ export default function WarningText({
     setDoctor(null);
     setName("");
     setFormSubmitted(false);
+    setStep(0);
   };
 
   const isAnyInfoAvailable =
@@ -44,18 +47,20 @@ export default function WarningText({
         </p>
       </div>
 
-      {isAnyInfoAvailable && (
-        <Button
-          variant={"destructive"}
-          className="px-10 py-5"
-          onClick={async () => {
-            await handleClearInfo();
-          }}
-        >
-          <X />
-          Мэдээлэл арилгах
-        </Button>
-      )}
+      <div className="hidden md:block">
+        {isAnyInfoAvailable && (
+          <Button
+            variant={"destructive"}
+            className="px-10 py-5"
+            onClick={async () => {
+              await handleClearInfo();
+            }}
+          >
+            <X />
+            Мэдээлэл арилгах
+          </Button>
+        )}
+      </div>
     </div>
   );
 }
