@@ -1,0 +1,11 @@
+# Ignore node_modules
+node_modules/
+
+# Other common files to ignore
+.env
+.next/
+dist/
+.DS_Store
+npm-debug.log*
+yarn-error.log*
+coverage/
